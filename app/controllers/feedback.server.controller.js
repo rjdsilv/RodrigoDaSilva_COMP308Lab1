@@ -7,10 +7,7 @@
         response.render('feedback', { email: email });
     } else if (request.method === 'POST') {
         // When it's a post, we redirect to the thankyou page, passing the filled first name.
-        const firstName = request.body.firstName;
-        if (firstName) {
-            session.firstName = firstName;
-        }
+        session.firstName = request.body.firstName;
         response.redirect('/thankyou');
     }
 }
