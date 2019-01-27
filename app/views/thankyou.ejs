@@ -20,7 +20,11 @@
         <div class="row mt-4">
             <div class="col-12">
                 <div class="alert alert-secondary">
+                    <%if (firstName.length == 0) { %>
                     <h3>Thank you for your feedback!</h3>
+                    <% } else { %>
+                    <h3>Thank you for your feedback, <%= firstName %>!</h3>
+                    <% } %>
                 </div>
             </div>
         </div>

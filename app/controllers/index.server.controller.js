@@ -2,7 +2,7 @@
     const email = request.body.email;
     const session = request.session;
 
-    session.email = email;
+    session.email = email ? email : '';
     console.log('In index.ejs got: ' + email);
 
     if (session.email) {

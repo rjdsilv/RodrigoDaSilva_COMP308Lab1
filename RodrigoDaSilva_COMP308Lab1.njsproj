@@ -44,6 +44,9 @@
     <Compile Include="config\env\development.js">
       <SubType>Code</SubType>
     </Compile>
+    <Compile Include="config\env\production.js">
+      <SubType>Code</SubType>
+    </Compile>
     <Compile Include="config\express.js">
       <SubType>Code</SubType>
     </Compile>

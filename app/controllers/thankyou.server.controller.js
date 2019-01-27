@@ -1,3 +1,4 @@
 ﻿exports.render = (request, response) => {
-    response.render('thankyou');
+    const firstName = request.session.firstName ? request.session.firstName : '';
+    response.render('thankyou', { firstName: firstName });
 }
