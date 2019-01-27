@@ -30,7 +30,18 @@
     <DebugSymbols>true</DebugSymbols>
   </PropertyGroup>
   <ItemGroup>
+    <Compile Include="app\controllers\feedback.server.controller.js" />
+    <Compile Include="app\controllers\thankyou.server.controller.js" />
+    <Compile Include="app\controllers\index.server.controller.js">
+      <SubType>Code</SubType>
+    </Compile>
     <Compile Include="app\routes\index.server.routes.js">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Include="config\config.js">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Include="config\env\development.js">
       <SubType>Code</SubType>
     </Compile>
     <Compile Include="config\express.js">
@@ -47,6 +58,9 @@
       <SubType>Code</SubType>
     </Content>
     <Content Include="package.json" />
+    <Content Include="public\app.css">
+      <SubType>Code</SubType>
+    </Content>
     <Content Include="README.md" />
   </ItemGroup>
   <ItemGroup>
@@ -57,6 +71,7 @@
     <Folder Include="app\views\" />
     <Folder Include="config\" />
     <Folder Include="config\env\" />
+    <Folder Include="public\" />
   </ItemGroup>
   <!-- Do not delete the following Import Project.  While this appears to do nothing it is a marker for setting TypeScript properties before our import that depends on them. -->
   <Import Project="$(MSBuildExtensionsPath32)\Microsoft\VisualStudio\v$(VisualStudioVersion)\TypeScript\Microsoft.TypeScript.targets" Condition="False" />
